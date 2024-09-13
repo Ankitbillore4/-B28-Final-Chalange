@@ -5,11 +5,16 @@ var video2 = document.querySelector(".video2")
 var URWERK = document.querySelector(".URWERK")
 
 
-var RIOT= document.querySelector(".RIOT")
 var video3 = document.querySelector(".video3")
+var RIOT= document.querySelector(".RIOT")
+
 
 var SALMON = document.querySelector(".SALMON")
-var video3 = document.querySelector(".video2")
+var video5 = document.querySelector(".video5")
+
+
+var video6 = document.querySelector(".video6")
+var COMPOSITION = document.querySelector(".COMPOSITION")
 
 
 
@@ -57,6 +62,39 @@ RIOT.addEventListener("mouseleave",function(){
     body.style.color = "black";
       
   })
+
+SALMON.addEventListener("mouseenter",function(){
+  video5.classList.remove("hidden")
+  body.style.color = "white";
+  
+})
+
+SALMON.addEventListener("mouseleave",function(){
+  video5.classList.add("hidden")
+  body.style.color = "black";
+ 
+  
+})
+
+
+COMPOSITION.addEventListener("mouseenter",function(){
+  video6.classList.remove("hidden")
+  body.style.color = "white";
+  
+  
+})
+
+
+COMPOSITION.addEventListener("mouseleave",function(){
+  video6.classList.add("hidden")
+  body.style.color = "black";
+  
+})
+
+
+
+
+
 
 
   var flag = 0;
