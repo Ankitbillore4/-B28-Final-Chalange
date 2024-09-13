@@ -91,12 +91,6 @@ COMPOSITION.addEventListener("mouseleave",function(){
   
 })
 
-
-
-
-
-
-
   var flag = 0;
   LightDarkMode.addEventListener("click", function() {
   if (flag === 0) {
@@ -109,3 +103,32 @@ COMPOSITION.addEventListener("mouseleave",function(){
     flag = 0;
   }
 });
+
+
+
+
+// gsap start
+
+var MENU = document.querySelector(".MENU");
+var navpart2 = document.querySelector(".navpart2");
+
+var flag = 0;
+MENU.addEventListener("click", function () {
+  if (flag === 0) {
+    navpart2.innerHTML = "CLOSE";
+    gsap.fromTo(".boxes", 
+      { y: -500 },
+      { y: 0, duration: 0.6, stagger: 0.1 }
+    );
+    flag = 1;
+  } else {
+    navpart2.innerHTML = "MENU";
+    gsap.to(".boxes", {
+      y: -500,
+      duration: 0.6,
+      stagger: 0.1,
+    });
+    flag = 0;
+  }
+});
+
