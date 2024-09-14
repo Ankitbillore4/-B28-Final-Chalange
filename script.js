@@ -130,6 +130,7 @@ MENU.addEventListener("click", function () {
     flag = 1;
   } else {
     navpart2.innerHTML = "MENU";
+    MenuBar.style.transform = `translateY(-110%)`
     gsap.to(".boxes", {
       y: -500,
       duration: 0.6,
