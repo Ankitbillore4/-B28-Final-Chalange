@@ -22,6 +22,9 @@ var COMPOSITION = document.querySelector(".COMPOSITION")
 var LightDarkMode = document.querySelector(".LightDarkMode")
 var body = document.querySelector("body")
 
+var nav = document.querySelector(".nav")
+var boxes = document.querySelectorAll(".boxes")
+
 
 
 CARTIER.addEventListener("mouseenter",function(){
@@ -96,10 +99,12 @@ COMPOSITION.addEventListener("mouseleave",function(){
   if (flag === 0) {
     body.style.color = "white";
     body.style.backgroundColor = "black";
+    nav.style.backgroundColor = "black"
     flag = 1;
   } else {
     body.style.color = "black";
     body.style.backgroundColor = "white";
+    nav.style.backgroundColor = "white"
     flag = 0;
   }
 });
@@ -111,11 +116,13 @@ COMPOSITION.addEventListener("mouseleave",function(){
 
 var MENU = document.querySelector(".MENU");
 var navpart2 = document.querySelector(".navpart2");
+var MenuBar = document.querySelector(".MenuBar")
 
 var flag = 0;
 MENU.addEventListener("click", function () {
   if (flag === 0) {
     navpart2.innerHTML = "CLOSE";
+    MenuBar.style.transform = `translateY(0%)`
     gsap.fromTo(".boxes", 
       { y: -500 },
       { y: 0, duration: 0.6, stagger: 0.1 }
@@ -132,3 +139,7 @@ MENU.addEventListener("click", function () {
   }
 });
 
+// document.querySelector(".menu").addEventListener("click", () => {
+//   document.querySelector(".menubar").style.transform = `translateX(0%)`
+
+// })
