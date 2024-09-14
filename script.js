@@ -154,7 +154,3 @@ MENU.addEventListener("click", function () {
   }
 });
 
-// document.querySelector(".menu").addEventListener("click", () => {
-//   document.querySelector(".menubar").style.transform = `translateX(0%)`
-
-// })
