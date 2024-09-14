@@ -6,7 +6,7 @@ var URWERK = document.querySelector(".URWERK")
 
 
 var video3 = document.querySelector(".video3")
-var RIOT= document.querySelector(".RIOT")
+var RIOT = document.querySelector(".RIOT")
 
 
 var SALMON = document.querySelector(".SALMON")
@@ -27,89 +27,89 @@ var boxes = document.querySelectorAll(".boxes")
 
 
 
-CARTIER.addEventListener("mouseenter",function(){
+CARTIER.addEventListener("mouseenter", function () {
   video1.classList.remove("hidden")
   body.style.color = "white";
   nav.style.backgroundColor = "transparent"
-    
+
 })
 
-CARTIER.addEventListener("mouseleave",function(){
-    video1.classList.add("hidden")
-    body.style.color = "black";
-   nav.style.backgroundColor = "white"
-
-      
-  })
+CARTIER.addEventListener("mouseleave", function () {
+  video1.classList.add("hidden")
+  body.style.color = "black";
+  nav.style.backgroundColor = "white"
 
 
-
-  URWERK.addEventListener("mouseenter",function(){
-    video2.classList.remove("hidden")
-    body.style.color = "white";
-     nav.style.backgroundColor = "transparent"
-      
 })
 
 
-URWERK.addEventListener("mouseleave",function(){
-    video2.classList.add("hidden")
-    body.style.color = "black";
-   nav.style.backgroundColor = "white"
 
-      
-  })
+URWERK.addEventListener("mouseenter", function () {
+  video2.classList.remove("hidden")
+  body.style.color = "white";
+  nav.style.backgroundColor = "transparent"
 
-RIOT.addEventListener("mouseenter",function(){
-    video3.classList.remove("hidden")
-    body.style.color = "white";
-     nav.style.backgroundColor = "transparent"
-      
 })
 
-RIOT.addEventListener("mouseleave",function(){
-    video3.classList.add("hidden")
-    body.style.color = "black";
-   nav.style.backgroundColor = "white"
 
-      
-  })
+URWERK.addEventListener("mouseleave", function () {
+  video2.classList.add("hidden")
+  body.style.color = "black";
+  nav.style.backgroundColor = "white"
 
-SALMON.addEventListener("mouseenter",function(){
+
+})
+
+RIOT.addEventListener("mouseenter", function () {
+  video3.classList.remove("hidden")
+  body.style.color = "white";
+  nav.style.backgroundColor = "transparent"
+
+})
+
+RIOT.addEventListener("mouseleave", function () {
+  video3.classList.add("hidden")
+  body.style.color = "black";
+  nav.style.backgroundColor = "white"
+
+
+})
+
+SALMON.addEventListener("mouseenter", function () {
   video5.classList.remove("hidden")
   body.style.color = "white";
-   nav.style.backgroundColor = "transparent"
-  
+  nav.style.backgroundColor = "transparent"
+
 })
 
-SALMON.addEventListener("mouseleave",function(){
+SALMON.addEventListener("mouseleave", function () {
   video5.classList.add("hidden")
   body.style.color = "black";
   nav.style.backgroundColor = "white"
 
- 
-  
+
+
 })
 
 
-COMPOSITION.addEventListener("mouseenter",function(){
+COMPOSITION.addEventListener("mouseenter", function () {
   video6.classList.remove("hidden")
   body.style.color = "white";
-   nav.style.backgroundColor = "transparent"
-  
-  
+  nav.style.backgroundColor = "transparent"
+
+
 })
 
 
-COMPOSITION.addEventListener("mouseleave",function(){
+COMPOSITION.addEventListener("mouseleave", function () {
   video6.classList.add("hidden")
   body.style.color = "black";
-   nav.style.backgroundColor = "white"
-  
+  nav.style.backgroundColor = "white"
+
 })
 
-  var flag = 0;
-  LightDarkMode.addEventListener("click", function() {
+var flag = 0;
+LightDarkMode.addEventListener("click", function () {
   if (flag === 0) {
     body.style.color = "white";
     body.style.backgroundColor = "black";
@@ -137,7 +137,7 @@ MENU.addEventListener("click", function () {
   if (flag === 0) {
     navpart2.innerHTML = "CLOSE";
     MenuBar.style.transform = `translateY(0%)`
-    gsap.fromTo(".boxes", 
+    gsap.fromTo(".boxes",
       { y: -500 },
       { y: 0, duration: 0.6, stagger: 0.1 }
     );
