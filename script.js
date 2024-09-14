@@ -30,12 +30,15 @@ var boxes = document.querySelectorAll(".boxes")
 CARTIER.addEventListener("mouseenter",function(){
   video1.classList.remove("hidden")
   body.style.color = "white";
+  nav.style.backgroundColor = "transparent"
     
 })
 
 CARTIER.addEventListener("mouseleave",function(){
     video1.classList.add("hidden")
     body.style.color = "black";
+   nav.style.backgroundColor = "white"
+
       
   })
 
@@ -44,6 +47,7 @@ CARTIER.addEventListener("mouseleave",function(){
   URWERK.addEventListener("mouseenter",function(){
     video2.classList.remove("hidden")
     body.style.color = "white";
+     nav.style.backgroundColor = "transparent"
       
 })
 
@@ -51,30 +55,38 @@ CARTIER.addEventListener("mouseleave",function(){
 URWERK.addEventListener("mouseleave",function(){
     video2.classList.add("hidden")
     body.style.color = "black";
+   nav.style.backgroundColor = "white"
+
       
   })
 
 RIOT.addEventListener("mouseenter",function(){
     video3.classList.remove("hidden")
     body.style.color = "white";
+     nav.style.backgroundColor = "transparent"
       
 })
 
 RIOT.addEventListener("mouseleave",function(){
     video3.classList.add("hidden")
     body.style.color = "black";
+   nav.style.backgroundColor = "white"
+
       
   })
 
 SALMON.addEventListener("mouseenter",function(){
   video5.classList.remove("hidden")
   body.style.color = "white";
+   nav.style.backgroundColor = "transparent"
   
 })
 
 SALMON.addEventListener("mouseleave",function(){
   video5.classList.add("hidden")
   body.style.color = "black";
+  nav.style.backgroundColor = "white"
+
  
   
 })
@@ -83,6 +95,7 @@ SALMON.addEventListener("mouseleave",function(){
 COMPOSITION.addEventListener("mouseenter",function(){
   video6.classList.remove("hidden")
   body.style.color = "white";
+   nav.style.backgroundColor = "transparent"
   
   
 })
@@ -91,6 +104,7 @@ COMPOSITION.addEventListener("mouseenter",function(){
 COMPOSITION.addEventListener("mouseleave",function(){
   video6.classList.add("hidden")
   body.style.color = "black";
+   nav.style.backgroundColor = "white"
   
 })
 
@@ -130,7 +144,7 @@ MENU.addEventListener("click", function () {
     flag = 1;
   } else {
     navpart2.innerHTML = "MENU";
-    MenuBar.style.transform = `translateY(-110%)`
+    MenuBar.style.transform = `translateY(-120%)`
     gsap.to(".boxes", {
       y: -500,
       duration: 0.6,
