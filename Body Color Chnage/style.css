@@ -1,0 +1,92 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+  }
+  
+  html,body{
+  height:100%;
+  width:100%;
+  }
+  .main{
+      height: 100%;
+      width: 100%;
+      background-color: whitesmoke;
+  }
+  
+  .boxes{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 200px;
+  }
+  
+  h2{
+      padding-top: 20px;
+      padding-left: 90px;
+  }
+  .text{
+      cursor: pointer;
+   padding: 10px 20px;
+  background-color:white;
+  border-radius: 10px;
+  position:absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+     
+      
+  }
+  .one{
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      cursor: pointer;
+      border: 2px solid black;
+  }
+  .two{
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      cursor: pointer;
+      border: 2px solid black;
+  }
+  .three{
+      height: 100px;
+      width: 100px;
+      background-color: green;
+      cursor: pointer;
+      border: 2px solid black;
+  }
+  .four{
+      height: 100px;
+      width: 100px;
+      background-color:yellow;
+      cursor: pointer;
+      border: 2px solid black;
+  }
+  .five{
+      height: 100px;
+      width: 100px;
+      background-color: orange;
+      cursor: pointer;
+      border: 2px solid black;
+  }
+  .six{
+      height: 100px;
+      width: 100px;
+      background-color: purple;
+      cursor: pointer;
+      border: 2px solid black;
+      
+  }.seven{
+      height: 100px;
+      width: 100px;
+      background-color: pink;
+      cursor: pointer;
+      border: 2px solid black;
+  }
