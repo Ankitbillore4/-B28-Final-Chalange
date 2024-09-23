@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plasticbionic | Art Direction, Graphic Design & Illustration</title>
+   
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Maincss -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main flex justify-center items-center">
+      <div
+        class="loader pointer-events-none h-[100vh] w-full absolute top-0 left-0 z-50 bg-black flex justify-center items-center text-white"
+      >
+        <div class="l-text overflow-hidden">
+          <h1 class="text-[9vw] t1 relative z-10 ">EVEREST</h1>
+        </div>
+        <div class="loader-img h-[45vh] w-[35vh]">
+          <img
+            class="l-img1 h-full w-full object-cover top-0 left-0 absolute opacity-1"
+            src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/11/Frame-48.png.webp"
+            alt=""
+          />
+          <img
+            class="l-img2 h-full w-full object-cover top-0 left-0 absolute opacity-0"
+            src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/11/Frame-39.png.webp"
+            alt=""
+          />
+          <img
+            class="l-img3 h-full w-full object-cover top-0 left-0 absolute opacity-0"
+            src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/03/Frame-57.png.webp"
+            alt=""
+          />
+          <div
+            class="loader-overlay absolute top-0 left-0 h-full w-full  opacity-0"
+          ></div>
+          <img
+            class="main-img h-full w-full object-cover opacity-0"
+            src="https://www.spicevillage.eu/cdn/shop/collections/EVEREST.jpg?v=1654689454"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="page1 h-[100vh] w-full flex justify-center opacity-90 items-center flex-col t1 text-white text-[7vw]"
+      >
+        <div class="page1-text overflow-hidden leading-[0.2]  text-black">
+          <h1 class="text1 mt-[35vw] ">SOO&nbsp; GOOD</h1>
+        </div>
+        <div class="page1-text overflow-hidden leading-[1.2]">
+          <h1 class="text2 ml-[29vw] text-[red]"> &nbsp; SO &nbsp; TASTY</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ScrollTrigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
