@@ -1,0 +1,72 @@
+
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+  }
+  
+  html,body{
+  height:100%;
+  width:100%;
+  }
+  
+  .circle1{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+  }
+  
+  .circlerotate{
+    position:absolute;
+    rotate: 90deg;
+    background-color: rgba(255, 99, 15, 0.496);
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    
+  }
+  
+  @keyframes rotate{
+    0%{
+      left: 20%;
+      top: 0%
+  
+    }
+    20%{
+      left:40%;
+      top: 20%;
+    }
+    50%{
+      left:50%;
+      top: -5%;
+    }
+    75%{
+      left:60%;
+      top: 30%;
+    }
+  }
+  
+  .texts1{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  .aeros h1{
+    background-color:rgba(205, 182, 182, 0.244);
+  }
+  .technology h1{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  .experience h1{
+     -webkit-text-stroke:1px white;
+     color: transparent;
+  }
+  .getintouch span{
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  }
+  
+  
+  
+  
